@@ -68,8 +68,11 @@ html {
 
 .navbar {
   //   border: 1px solid black;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  // padding-top: 18px;
+  // padding-bottom: 18px;
+  
+  padding: 24px 0px;
+  box-shadow: unset;
 }
 
 .navbar-btns-after {
@@ -1486,13 +1489,12 @@ footer {
 }
 
 .nav-link {
-  // Sobre
-  color: #666666;
-  font-size: 18px;
-  font-family: "Neue Haas Unica Pro";
+  color: var(--menu-canais-text-default, #fff);
+  font-family: var(--font-font-body-lg-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-lg-size, 16px);
+  font-style: normal;
   font-weight: 400;
-  line-height: 22.32px;
-  word-wrap: break-word;
+  line-height: var(--font-font-body-lg-line-height, 24px);
 }
 
 .nav-link:after {

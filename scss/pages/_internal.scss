@@ -404,3 +404,399 @@
     border-radius: 4px;
   }
 }
+
+.banner-lp {
+  // position: absolute;
+  top: 0;
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.64) 72.2%,
+      #000 100%
+    ),
+    url("../../images/banner-01.jpeg") lightgray 50% / cover no-repeat;
+  height: 890px;
+  width: 100%;
+}
+
+.navbar-after {
+  .nav-itens {
+    display: flex;
+    gap: 24px;
+
+    a {
+      text-decoration: none;
+      color: var(--menu-canais-text-default, #fff);
+      font-family: var(--font-font-body-lg-font-family, "Neue Haas Unica Pro");
+      font-size: var(--font-font-body-lg-size, 16px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+    }
+  }
+
+  .links-banner {
+    display: flex;
+    gap: 16px;
+
+    a:first-child {
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+
+    a:last-child {
+      border-radius: 8px;
+      background: var(--default-default-icon-accent, #344ff4);
+      font-weight: 600;
+    }
+
+    a {
+      padding: 8px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      color: var(--font-font-body-md-body-md-inverse, #fff);
+
+      /* Body/Body Md - Regular */
+      font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+      font-size: var(--font-font-body-md-size, 14px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+    }
+  }
+}
+
+.texts-banner-lp {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 890px;
+
+  .main-content-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 906px;
+    height: 890px;
+
+    justify-content: center;
+    // border: 1px solid red;
+
+    // padding-top: 230px;
+
+    small {
+      color: var(--font-font-body-xl-body-xl-inverse, #fff);
+
+      /* Body/Body Xl - Bold */
+      font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+      font-size: var(--font-font-body-xl-size, 18px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: var(--font-font-display-title-display-inverse, #fff);
+
+      /* Titles/Display - Light */
+      font-family: var(--font-font-display-font-family, "Bw Seido Raw");
+      font-size: var(--font-font-display-size, 64px);
+      font-style: normal;
+      font-weight: 300;
+      line-height: var(--font-font-display-line-height, 88px); /* 137.5% */
+    }
+
+    p {
+      color: var(--font-font-body-lg-body-lg-inverse, #fff);
+      font-family: Arial;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 19.2px */
+
+      width: 504px;
+    }
+
+    a {
+      margin-top: 16px;
+
+      width: fit-content;
+      text-decoration: none;
+      padding: 16px 32px;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      background: var(--primary-01, #344ff4);
+      color: var(--font-font-body-md-body-md-inverse, #fff);
+      font-family: var(--font-font-body-lg-font-family, "Neue Haas Unica Pro");
+      font-size: var(--font-font-body-lg-size, 16px);
+      font-style: normal;
+      font-weight: 700;
+      line-height: inherit;
+    }
+  }
+}
+
+.section-sobre {
+  padding: 96px 0px;
+  background: var(--default-default-section-bg-primary, #344ff4);
+
+  .section-text-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    .text {
+      width: 45%;
+
+      small {
+        color: var(--font-font-body-xl-body-xl-inverse, #fff);
+
+        /* Body/Body Xl - Bold */
+        font-family: var(
+          --font-font-body-xl-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-xl-size, 18px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+
+        margin-top: 32px;
+        margin-bottom: 48px;
+
+        color: var(--font-font-h2-title-h2-inverse, #fff);
+
+        /* Titles/H2 */
+        font-family: var(--font-font-h2-font-family, "Bw Seido Raw");
+        font-size: var(--font-font-h2-size, 40px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-font-h2-line-height, 50px); /* 125% */
+      }
+
+      a {
+        padding: 16px 32px;
+        border-radius: 12px;
+        background: var(--secondary-01, #282828);
+        text-decoration: none;
+
+        color: var(--font-font-body-md-body-md-inverse, #fff);
+
+        /* Body/Body Lg - Bold */
+        font-family: var(
+          --font-font-body-lg-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-lg-size, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+      }
+
+      p {
+        margin-top: 32px;
+        color: var(--font-font-body-xs-body-xs-inverse, #fff);
+        font-family: var(
+          --font-font-body-xs-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-xs-size, 10px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-font-body-xs-line-height, 14px); /* 140% */
+
+        width: 449px;
+      }
+    }
+
+    .imgs {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .text-box {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 4px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        width: 505px;
+
+        margin-right: 295px;
+        margin-bottom: 60px;
+
+        h4 {
+          margin: 0;
+          padding: 0;
+
+          margin-bottom: 16px;
+
+          color: var(--default-default-icon-accent, #344ff4);
+
+          /* Body/Body Lg - Bold */
+          font-family: var(
+            --font-font-body-lg-font-family,
+            "Neue Haas Unica Pro"
+          );
+          font-size: var(--font-font-body-lg-size, 16px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+        }
+
+        p {
+          margin-bottom: 16px;
+          color: var(--font-font-body-lg-body-lg, #3d3d3d);
+          font-family: var(
+            --font-font-body-lg-font-family,
+            "Neue Haas Unica Pro"
+          );
+          font-size: var(--font-font-body-lg-size, 16px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+        }
+
+        p:last-child {
+          margin-bottom: 0px;
+        }
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.cotacao-home {
+  background: var(--default-default-section-bg-primary, #344ff4);
+
+  .mySwiper-cotas {
+    .swiper-wrapper {
+      .swiper-slide {
+      }
+
+      .swiper-slide {
+        display: flex;
+        gap: 8px;
+        align-items: flex-end;
+        width: 274px !important;
+        padding: 12px 24px;
+        border-right: 1px solid var(--primary-03, #203abf);
+
+        .txt-green {
+          color: #24b243 !important;
+        }
+
+        .flag-img {
+          img {
+            width: 40px;
+            border-radius: 50%;
+          }
+        }
+
+        .infos-cot {
+          display: flex;
+          gap: 4px;
+
+          .infos-1 {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              color: var(--colors-grey-grey-95, #f7f7f7);
+              font-family: var(
+                --font-font-body-md-font-family,
+                "Neue Haas Unica Pro"
+              );
+              font-size: var(--font-font-body-md-size, 14px);
+              font-style: normal;
+              font-weight: 400;
+              line-height: var(
+                --font-font-body-md-line-height,
+                20px
+              ); /* 142.857% */
+            }
+
+            span {
+              color: var(--colors-red-90, #ff1300);
+
+              /* Body/Body Md - Bold */
+              font-family: var(
+                --font-font-body-md-font-family,
+                "Neue Haas Unica Pro"
+              );
+              font-size: var(--font-font-body-md-size, 14px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: var(
+                --font-font-body-md-line-height,
+                20px
+              ); /* 142.857% */
+            }
+          }
+
+          .infos-2 {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              color: var(--colors-grey-grey-95, #f7f7f7);
+
+              /* Body/Body Md - Bold */
+              font-family: var(
+                --font-font-body-md-font-family,
+                "Neue Haas Unica Pro"
+              );
+              font-size: var(--font-font-body-md-size, 14px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: var(
+                --font-font-body-md-line-height,
+                20px
+              ); /* 142.857% */
+            }
+
+            span {
+              color: var(--colors-grey-grey-100, #fff);
+              font-family: var(
+                --font-font-body-md-font-family,
+                "Neue Haas Unica Pro"
+              );
+              font-size: var(--font-font-body-md-size, 14px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: var(
+                --font-font-body-md-line-height,
+                20px
+              ); /* 142.857% */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.programs-section {
+  padding: 112px 0px;
+  background-color: #344ff4;
+}
