@@ -1272,16 +1272,58 @@
       .swiper-slide:first-child {
         border-radius: var(---size-base-size-2, 2px);
         background: #e60000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 156px;
+        }
       }
 
       .swiper-slide {
         display: flex;
+        height: 272px;
         flex-direction: column;
-        
+
         width: 237px;
         padding: 24px;
         border-radius: 4px;
         border-right: 1px solid var(--colors-grey-grey-10, #3d3d3d);
+
+        img {
+          width: 48px;
+        }
+
+        h5 {
+          margin: 0;
+          padding: 0;
+
+          margin-bottom: 8px;
+          margin-top: 40px;
+
+          color: var(--font-font-h5-title-h5-inverse, #fff);
+          font-family: var(--font-font-h5-font-family, "Bw Seido Raw");
+          font-size: var(--font-font-h5-size, 24px);
+          font-style: normal;
+          font-weight: 500;
+          line-height: var(--font-font-h5-line-height, 34px); /* 141.667% */
+        }
+
+        p {
+          color: var(--font-font-body-md-body-md-inverse, #fff);
+          font-family: var(
+            --font-font-body-md-font-family,
+            "Neue Haas Unica Pro"
+          );
+          font-size: var(--font-font-body-md-size, 14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(
+            --font-font-body-md-line-height,
+            20px
+          ); /* 142.857% */
+        }
       }
     }
   }
