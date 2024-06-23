@@ -454,7 +454,7 @@ html {
 }
 
 .container-sm {
-  max-width: 1500px !important;
+  max-width: 1576px !important;
   --mdb-gutter-x: 3.5rem !important;
 }
 
@@ -11442,7 +11442,7 @@ body {
   font-size: var(--font-font-body-md-size, 14px);
   font-style: normal;
   font-weight: 400;
-  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+  line-height: var(--font-font-body-md-line-height, 20px);
 }
 
 .texts-banner-lp {
@@ -11477,7 +11477,7 @@ body {
   font-size: var(--font-font-display-size, 64px);
   font-style: normal;
   font-weight: 300;
-  line-height: var(--font-font-display-line-height, 88px); /* 137.5% */
+  line-height: var(--font-font-display-line-height, 88px);
 }
 .texts-banner-lp .main-content-texts p {
   color: var(--font-font-body-lg-body-lg-inverse, #fff);
@@ -11642,7 +11642,7 @@ body {
   font-size: var(--font-font-body-md-size, 14px);
   font-style: normal;
   font-weight: 400;
-  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+  line-height: var(--font-font-body-md-line-height, 20px);
 }
 .cotacao-home .mySwiper-cotas .swiper-wrapper .swiper-slide .infos-cot .infos-1 span {
   color: var(--colors-red-90, #ff1300);
@@ -11651,7 +11651,7 @@ body {
   font-size: var(--font-font-body-md-size, 14px);
   font-style: normal;
   font-weight: 700;
-  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+  line-height: var(--font-font-body-md-line-height, 20px);
 }
 .cotacao-home .mySwiper-cotas .swiper-wrapper .swiper-slide .infos-cot .infos-2 {
   display: flex;
@@ -11664,7 +11664,7 @@ body {
   font-size: var(--font-font-body-md-size, 14px);
   font-style: normal;
   font-weight: 700;
-  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+  line-height: var(--font-font-body-md-line-height, 20px);
 }
 .cotacao-home .mySwiper-cotas .swiper-wrapper .swiper-slide .infos-cot .infos-2 span {
   color: var(--colors-grey-grey-100, #fff);
@@ -11672,12 +11672,389 @@ body {
   font-size: var(--font-font-body-md-size, 14px);
   font-style: normal;
   font-weight: 700;
-  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+  line-height: var(--font-font-body-md-line-height, 20px);
 }
 
 .programs-section {
   padding: 112px 0px;
   background-color: #344ff4;
+}
+
+.itens-programs {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 32px;
+}
+.itens-programs .first-card {
+  border-radius: 8px;
+  background: var(--primary-02, #324ae5);
+  padding: 24px;
+  width: 504px;
+}
+.itens-programs .first-card span {
+  color: var(--font-font-body-xl-body-xl-inverse, #fff);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+}
+.itens-programs .first-card h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: var(--font-font-h3-title-h3-inverse, #fff);
+  font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-h3-size, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--font-font-h3-line-height, 44px);
+}
+.itens-programs .first-card p {
+  color: var(--font-font-body-md-body-md-inverse, #fff);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px);
+}
+.itens-programs .cards-programs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+.itens-programs .cards-programs .label {
+  width: fit-content;
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--colors-grey-grey-100, #fff);
+}
+.itens-programs .cards-programs .label span {
+  color: var(--font-font-body-sm-body-sm-inverse, #fff);
+  font-family: var(--font-font-body-sm-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-sm-size, 12px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-sm-line-height, 16px); /* 133.333% */
+}
+.itens-programs .cards-programs .infos-cards {
+  display: flex;
+  flex-direction: column;
+}
+.itens-programs .cards-programs .infos-cards h2 {
+  margin: 0;
+  padding: 0;
+  opacity: 0.1;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  color: var(--font-font-display-title-display-inverse, #fff);
+  font-family: var(--font-font-display-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-display-size, 64px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: var(--font-font-display-line-height, 88px);
+}
+.itens-programs .cards-programs .infos-cards h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  color: var(--font-font-body-xl-body-xl-inverse, #fff);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+}
+.itens-programs .cards-programs .infos-cards p {
+  color: var(--colors-grey-grey-80, #ccc);
+  /* Body/Body Sm - Bold */
+  font-family: var(--font-font-body-sm-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-sm-size, 12px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-sm-line-height, 16px); /* 133.333% */
+}
+
+.w-afil {
+  padding: 112px 0px;
+}
+.w-afil .itens-w {
+  display: flex;
+  flex-direction: column;
+}
+.w-afil .itens-w .label-title {
+  margin-bottom: 32px;
+}
+.w-afil .itens-w .label-title span {
+  color: var(--font-font-body-xl-body-xl, #242424);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-xl-line-height, 26px);
+}
+.w-afil .itens-w .item-2 {
+  gap: 32px;
+  display: flex;
+}
+.w-afil .itens-w .item-2 .text-1 h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  color: var(--default-default-icon-accent, #344ff4);
+  font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-h3-size, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--font-font-h3-line-height, 44px);
+}
+.w-afil .itens-w .item-2 .text-1 p:last-child {
+  margin-bottom: 0px;
+}
+.w-afil .itens-w .item-2 .text-1 p {
+  margin-bottom: 20px;
+  color: var(--font-font-body-md-body-md, #666);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px);
+}
+.w-afil .itens-w .item-2 .text-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+.w-afil .itens-w .item-2 .text-2 .cards-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.w-afil .itens-w .item-2 .text-2 .cards-content .cards {
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 1px solid var(--colors-grey-grey-85, #dedede);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.w-afil .itens-w .item-2 .text-2 .cards-content .cards p {
+  color: var(--font-font-body-md-body-md, #666);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px);
+}
+.w-afil .itens-w .item-2 .text-2 .texts-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.w-afil .itens-w .item-2 .text-2 .texts-content p {
+  color: var(--font-font-body-md-body-md, #666);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px);
+}
+.w-afil .itens-w .item-2 .text-2 .texts-content h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  color: var(--default-default-icon-accent, #344ff4);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-xl-line-height, 26px);
+}
+
+.como-funciona {
+  background: var(--default-default-section-bg-primary, #344ff4);
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.como-funciona .itens-cf {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+}
+.como-funciona .itens-cf .item-1 {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  padding-right: 40px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  position: relative;
+  z-index: 2;
+  background: var(--default-default-section-bg-primary, #344ff4);
+}
+.como-funciona .itens-cf .item-1 span {
+  color: var(--font-font-body-xl-body-xl-inverse, #fff);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+}
+.como-funciona .itens-cf .item-1 h3 {
+  margin: 0;
+  padding: 0;
+  margin: 32px 0px;
+  color: var(--font-font-h3-title-h3-inverse, #fff);
+  font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-h3-size, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--font-font-h3-line-height, 44px);
+}
+.como-funciona .itens-cf .item-1 p:last-of-type {
+  margin-bottom: 40px;
+  color: var(--font-font-body-md-body-md-inverse, #fff);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+}
+.como-funciona .itens-cf .item-1 p {
+  margin-bottom: 20px;
+  color: var(--font-font-body-md-body-md-inverse, #fff);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+}
+.como-funciona .itens-cf .item-1 a {
+  border-radius: 12px;
+  background: var(--secondary-01, #282828);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  color: var(--font-font-body-md-body-md-inverse, #fff);
+  font-family: var(--font-font-body-lg-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-lg-size, 16px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+}
+.como-funciona .itens-cf .item-1 small {
+  color: var(--font-font-body-xs-body-xs-inverse, #fff);
+  font-family: var(--font-font-body-xs-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xs-size, 10px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-xs-line-height, 14px); /* 140% */
+}
+.como-funciona .itens-cf .item-2 {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+.como-funciona .itens-cf .item-2 img {
+  object-fit: cover;
+  width: 1022px;
+  height: 100%;
+}
+
+.abordagem {
+  padding: 72px;
+}
+.abordagem .itens-ab {
+  display: flex;
+  gap: 32px;
+}
+.abordagem .item-1 {
+  width: 100%;
+}
+.abordagem .item-1 h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--font-font-h3-title-h3, #282828);
+  font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-h3-size, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--font-font-h3-line-height, 44px);
+}
+.abordagem .item-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  width: 214%;
+}
+.abordagem .item-2 p:last-of-type {
+  margin-bottom: 0px;
+}
+.abordagem .item-2 p {
+  margin-bottom: 32px;
+  color: var(--font-font-body-md-body-md, #666);
+  font-family: var(--font-font-body-md-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-md-size, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+}
+.great-work {
+  padding: 80px 0px;
+  background: var(--default-default-section-bg-dark, #242424);
+}
+.great-work .contents-great {
+  display: flex;
+  gap: 32px;
+}
+.great-work .contents-great .title {
+  width: 370px;
+}
+.great-work .contents-great .title h3 {
+  margin: 0;
+  padding: 0;
+  color: var(--font-font-h3-title-h3-inverse, #fff);
+  font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
+  font-size: var(--font-font-h3-size, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: var(--font-font-h3-line-height, 44px); /* 137.5% */
+}
+.great-work .contents-great .title p {
+  color: var(--font-font-body-xl-body-xl-inverse, #fff);
+  font-family: var(--font-font-body-xl-font-family, "Neue Haas Unica Pro");
+  font-size: var(--font-font-body-xl-size, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-font-body-xl-line-height, 26px); /* 144.444% */
+}
+.great-work .contents-great .carrosel-gt {
+  width: 100%;
+}
+.great-work .contents-great .swiper-gt {
+  width: 100%;
+}
+.great-work .contents-great .swiper-gt .swiper-slide:first-child {
+  border-radius: var(---size-base-size-2, 2px);
+  background: #e60000;
+}
+.great-work .contents-great .swiper-gt .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  width: 237px;
+  padding: 24px;
+  border-radius: 4px;
+  border-right: 1px solid var(--colors-grey-grey-10, #3d3d3d);
 }
 
 /*# sourceMappingURL=import.css.map */
