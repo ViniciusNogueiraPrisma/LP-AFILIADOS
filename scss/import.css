@@ -11432,11 +11432,25 @@ body {
 .navbar-after .links-banner a:first-child {
   background-color: transparent;
   border: 1px solid #fff;
+  transition: 0.3s;
+}
+.navbar-after .links-banner a:first-child:hover {
+  transition: 0.3s;
+  color: #344ff4;
+  background-color: #ffffff;
+}
+.navbar-after .links-banner a:first-child:hover img {
+  filter: invert(1);
 }
 .navbar-after .links-banner a:last-child {
   border-radius: 8px;
   background: var(--default-default-icon-accent, #344ff4);
   font-weight: 600;
+  transition: 0.3s;
+}
+.navbar-after .links-banner a:last-child:hover {
+  transition: 0.3s;
+  background: var(--primary-03, #203abf);
 }
 .navbar-after .links-banner a {
   padding: 8px 24px;
@@ -11538,6 +11552,11 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: inherit;
+  transition: 0.3s;
+}
+.texts-banner-lp .main-content-texts a:hover {
+  transition: 0.3s;
+  background: var(--primary-03, #203abf);
 }
 
 .section-sobre {
@@ -11596,7 +11615,12 @@ body {
   font-size: var(--font-font-body-lg-size, 16px);
   font-style: normal;
   font-weight: 700;
-  line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+  line-height: var(--font-font-body-lg-line-height, 24px);
+  transition: 0.3s;
+}
+.section-sobre .section-text-img .text a:hover {
+  transition: 0.3s;
+  background-color: #5c5c5c;
 }
 .section-sobre .section-text-img .text p {
   margin-top: 32px;
@@ -12117,7 +12141,12 @@ body {
   font-size: var(--font-font-body-lg-size, 16px);
   font-style: normal;
   font-weight: 700;
-  line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+  line-height: var(--font-font-body-lg-line-height, 24px);
+  transition: 0.3s;
+}
+.como-funciona .itens-cf .item-1 a:hover {
+  transition: 0.3s;
+  background-color: #5c5c5c;
 }
 .como-funciona .itens-cf .item-1 small {
   color: var(--font-font-body-xs-body-xs-inverse, #fff);

@@ -454,12 +454,29 @@
     a:first-child {
       background-color: transparent;
       border: 1px solid #fff;
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        color: #344ff4;
+        background-color: #ffffff;
+
+        img {
+          filter: invert(1);
+        }
+      }
     }
 
     a:last-child {
       border-radius: 8px;
       background: var(--default-default-icon-accent, #344ff4);
       font-weight: 600;
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        background: var(--primary-03, #203abf);
+      }
     }
 
     a {
@@ -568,6 +585,13 @@
       font-style: normal;
       font-weight: 700;
       line-height: inherit;
+
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        background: var(--primary-03, #203abf);
+      }
     }
   }
 }
@@ -640,7 +664,13 @@
         font-size: var(--font-font-body-lg-size, 16px);
         font-style: normal;
         font-weight: 700;
-        line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+        line-height: var(--font-font-body-lg-line-height, 24px);
+        transition: 0.3s;
+
+        &:hover {
+          transition: 0.3s;
+          background-color: #5c5c5c;
+        }
       }
 
       p {
@@ -1292,7 +1322,13 @@
         font-size: var(--font-font-body-lg-size, 16px);
         font-style: normal;
         font-weight: 700;
-        line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+        line-height: var(--font-font-body-lg-line-height, 24px);
+        transition: 0.3s;
+
+        &:hover {
+          transition: 0.3s;
+          background-color: #5c5c5c;
+        }
       }
 
       small {
