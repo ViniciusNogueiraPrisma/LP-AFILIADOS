@@ -11478,6 +11478,11 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 532px) {
+  .texts-banner-lp .main-content-texts {
+    padding-top: 112px;
+  }
+}
 .texts-banner-lp .main-content-texts small {
   color: var(--font-font-body-xl-body-xl-inverse, #fff);
   /* Body/Body Xl - Bold */
@@ -11500,6 +11505,7 @@ body {
 @media (max-width: 1200px) {
   .texts-banner-lp .main-content-texts h1 {
     font-size: 50px;
+    line-height: var(--font-font-display-line-height, 58px);
   }
 }
 .texts-banner-lp .main-content-texts p {
