@@ -415,16 +415,28 @@
       #000 100%
     ),
     url("../../images/banner-01.jpeg") lightgray 50% / cover no-repeat;
-  height: 890px;
+  height: 840px;
   width: 100%;
 }
 
 .navbar-after {
+  flex-wrap: wrap;
+  gap: 24px;
+
   .nav-itens {
     display: flex;
     gap: 24px;
 
+    @media (max-width: 1227px) {
+      display: none;
+    }
+
     a {
+      padding-top: 4px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-bottom: 6px;
+
       text-decoration: none;
       color: var(--menu-canais-text-default, #fff);
       font-family: var(--font-font-body-lg-font-family, "Neue Haas Unica Pro");
@@ -466,6 +478,10 @@
       font-style: normal;
       font-weight: 400;
       line-height: var(--font-font-body-md-line-height, 20px);
+
+      @media (max-width: 800px) {
+        padding: 8px 16px;
+      }
     }
   }
 }
@@ -474,19 +490,19 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 890px;
+  height: 840px;
 
   .main-content-texts {
     display: flex;
     flex-direction: column;
     gap: 24px;
     width: 906px;
-    height: 890px;
-
+    height: 840px;
     justify-content: center;
-    // border: 1px solid red;
 
-    // padding-top: 230px;
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
 
     small {
       color: var(--font-font-body-xl-body-xl-inverse, #fff);
@@ -502,14 +518,17 @@
     h1 {
       margin: 0;
       padding: 0;
-      color: var(--font-font-display-title-display-inverse, #fff);
 
-      /* Titles/Display - Light */
+      color: var(--font-font-display-title-display-inverse, #fff);
       font-family: var(--font-font-display-font-family, "Bw Seido Raw");
       font-size: var(--font-font-display-size, 64px);
       font-style: normal;
       font-weight: 300;
       line-height: var(--font-font-display-line-height, 88px);
+
+      @media (max-width: 1200px) {
+        font-size: 50px;
+      }
     }
 
     p {
@@ -521,6 +540,10 @@
       line-height: 120%; /* 19.2px */
 
       width: 504px;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
     }
 
     a {
@@ -554,8 +577,16 @@
     align-items: center;
     gap: 32px;
 
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
     .text {
-      width: 45%;
+      width: 43%;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
 
       small {
         color: var(--font-font-body-xl-body-xl-inverse, #fff);
@@ -620,6 +651,10 @@
         line-height: var(--font-font-body-xs-line-height, 14px); /* 140% */
 
         width: 449px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+        }
       }
     }
 
@@ -629,6 +664,12 @@
       justify-content: flex-end;
       align-items: flex-end;
 
+      @media (max-width: 1200px) {
+        width: 100%;
+        gap: 24px;
+        flex-direction: column;
+      }
+
       .text-box {
         background-color: #fff;
         padding: 40px;
@@ -637,15 +678,32 @@
         position: absolute;
         z-index: 1;
         width: 505px;
-
         margin-right: 295px;
         margin-bottom: 60px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+          position: relative;
+          margin: 0px !important;
+        }
+
+        @media (max-width: 1470px) {
+          margin-right: 204px;
+        }
+
+        @media (max-width: 1326px) {
+          margin-right: 162px;
+        }
+
+        @media (max-width: 1250px) {
+          margin-right: 112px;
+        }
 
         h4 {
           margin: 0;
           padding: 0;
 
-          margin-bottom: 16px;
+          margin-bottom: 16px !important;
 
           color: var(--default-default-icon-accent, #344ff4);
 
@@ -662,6 +720,7 @@
 
         p {
           margin-bottom: 16px;
+
           color: var(--font-font-body-lg-body-lg, #3d3d3d);
           font-family: var(
             --font-font-body-lg-font-family,
@@ -670,7 +729,32 @@
           font-size: var(--font-font-body-lg-size, 16px);
           font-style: normal;
           font-weight: 400;
-          line-height: var(--font-font-body-lg-line-height, 24px); /* 150% */
+          line-height: var(--font-font-body-lg-line-height, 24px);
+        }
+
+        strong {
+          color: var(--font-font-body-lg-body-lg, #3d3d3d);
+          font-family: var(
+            --font-font-body-md-font-family,
+            "Neue Haas Unica Pro"
+          );
+          // font-size: var(--font-font-body-md-size, 14px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--font-font-body-md-line-height, 20px);
+        }
+
+        blue {
+          color: var(--default-default-icon-accent, #344ff4);
+
+          /* Body/Body Md - Bold */
+          font-family: var(
+            --font-font-body-md-font-family,
+            "Neue Haas Unica Pro"
+          );
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--font-font-body-md-line-height, 20px);
         }
 
         p:last-child {
@@ -681,6 +765,11 @@
       img {
         object-fit: cover;
         border-radius: 8px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+          height: 540px;
+        }
       }
     }
   }
@@ -692,14 +781,11 @@
   .mySwiper-cotas {
     .swiper-wrapper {
       .swiper-slide {
-      }
-
-      .swiper-slide {
         display: flex;
         gap: 8px;
         align-items: flex-end;
-        width: 274px !important;
-        padding: 12px 24px;
+        width: 284px !important;
+        padding: 12px 0px;
         border-right: 1px solid var(--primary-03, #203abf);
 
         .txt-green {
@@ -789,16 +875,53 @@
   background-color: #344ff4;
 }
 
+.tst-pg {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  .tst-programs {
+    display: flex !important;
+  }
+}
+
 .itens-programs {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 32px;
+
+  @media (max-width: 1086px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 923px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 682px) {
+    grid-template-columns: 1fr;
+  }
 
   .first-card {
     border-radius: 8px;
     background: var(--primary-02, #324ae5);
     padding: 24px;
     width: 504px;
+
+    @media (max-width: 1338px) {
+      width: 418px;
+    }
+
+    @media (max-width: 1254px) {
+      width: 343px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 100% !important;
+    }
 
     span {
       color: var(--font-font-body-xl-body-xl-inverse, #fff);
@@ -836,7 +959,12 @@
   .cards-programs {
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
+    border-right: 1px solid var(--primary-02, #324ae5);
+    padding-right: 24px;
+
+    @media (max-width: 682px) {
+      border-right: 0px;
+    }
 
     .label {
       width: fit-content;
@@ -938,6 +1066,10 @@
       gap: 32px;
       display: flex;
 
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
       .text-1 {
         h3 {
           margin: 0;
@@ -981,6 +1113,10 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 8px;
+
+          @media (max-width: 834px) {
+            grid-template-columns: 1fr;
+          }
 
           .cards {
             border-radius: 4px;
@@ -1058,6 +1194,10 @@
     overflow: hidden;
     align-items: center;
 
+    @media (max-width: 1352px) {
+      flex-direction: column;
+    }
+
     .item-1 {
       display: flex;
       flex-direction: column;
@@ -1068,6 +1208,11 @@
       position: relative;
       z-index: 2;
       background: var(--default-default-section-bg-primary, #344ff4);
+
+      @media (max-width: 1352px) {
+        width: 100%;
+        padding-bottom: 40px;
+      }
 
       span {
         color: var(--font-font-body-xl-body-xl-inverse, #fff);
@@ -1106,7 +1251,7 @@
         font-size: var(--font-font-body-md-size, 14px);
         font-style: normal;
         font-weight: 700;
-        line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+        line-height: var(--font-font-body-md-line-height, 20px);
       }
 
       p {
@@ -1120,7 +1265,7 @@
         font-size: var(--font-font-body-md-size, 14px);
         font-style: normal;
         font-weight: 400;
-        line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+        line-height: var(--font-font-body-md-line-height, 20px);
       }
 
       a {
@@ -1165,10 +1310,19 @@
       right: 0;
       top: 0;
 
+      @media (max-width: 1352px) {
+        position: relative;
+        width: 100%;
+      }
+
       img {
         object-fit: cover;
         width: 1022px;
         height: 100%;
+
+        @media (max-width: 1352px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -1177,9 +1331,17 @@
 .abordagem {
   padding: 72px;
 
+  @media (max-width: 1200px) {
+    padding: 72px 0px;
+  }
+
   .itens-ab {
     display: flex;
     gap: 32px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
 
   .item-1 {
@@ -1204,6 +1366,12 @@
     gap: 32px;
     width: 214%;
 
+    @media (max-width: 1200px) {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
     p:last-of-type {
       margin-bottom: 0px;
     }
@@ -1215,7 +1383,11 @@
       font-size: var(--font-font-body-md-size, 14px);
       font-style: normal;
       font-weight: 400;
-      line-height: var(--font-font-body-md-line-height, 20px); /* 142.857% */
+      line-height: var(--font-font-body-md-line-height, 20px);
+
+      @media (max-width: 1200px) {
+        margin-bottom: 20px;
+      }
     }
 
     .text-1 {
@@ -1234,12 +1406,22 @@
     display: flex;
     gap: 32px;
 
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
     .title {
       width: 370px;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
 
       h3 {
         margin: 0;
         padding: 0;
+
+        margin-bottom: 16px;
 
         color: var(--font-font-h3-title-h3-inverse, #fff);
         font-family: var(--font-font-h3-font-family, "Bw Seido Raw");
@@ -1263,7 +1445,11 @@
     }
 
     .carrosel-gt {
-      width: 100%;
+      width: 75%;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
     }
 
     .swiper-gt {
@@ -1319,11 +1505,196 @@
           font-size: var(--font-font-body-md-size, 14px);
           font-style: normal;
           font-weight: 400;
-          line-height: var(
-            --font-font-body-md-line-height,
-            20px
-          ); /* 142.857% */
+          line-height: var(--font-font-body-md-line-height, 20px);
         }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #1a1a1a;
+
+  .first-itens-footer {
+    padding-top: 64px;
+
+    .line-1 {
+      display: flex;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--colors-grey-grey-20, #525252);
+
+      @media (max-width: 1200px) {
+        gap: 42px;
+      }
+
+      @media (max-width: 954px) {
+        flex-direction: column;
+      }
+
+      .logo {
+        width: 540px;
+
+        @media (max-width: 1200px) {
+          width: fit-content;
+        }
+
+        img {
+          width: 130px;
+        }
+      }
+
+      .sobre-footer {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        border-right: 1px solid #424242;
+        gap: 8px;
+
+        @media (max-width: 1200px) {
+          width: fit-content;
+          padding-right: 40px;
+        }
+
+        @media (max-width: 954px) {
+          padding-right: 0px;
+          border-right: 0px;
+        }
+
+        a {
+          color: var(--font-font-body-md-body-md-inverse, #fff);
+          font-family: var(
+            --font-font-body-md-font-family,
+            "Neue Haas Unica Pro"
+          );
+          font-size: var(--font-font-body-md-size, 14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--font-font-body-md-line-height, 20px);
+        }
+      }
+
+      .infos-social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+        padding-left: 32px;
+
+        @media (max-width: 1200px) {
+          grid-template-columns: 1fr;
+          padding-left: 0px;
+        }
+
+        .item {
+          h6 {
+            margin: 0;
+            padding: 0;
+
+            margin-bottom: 16px;
+
+            color: var(--font-font-body-md-body-md-inverse, #fff);
+            font-family: var(
+              --font-font-body-md-font-family,
+              "Neue Haas Unica Pro"
+            );
+            font-size: var(--font-font-body-md-size, 14px);
+            font-style: normal;
+            font-weight: 700;
+            line-height: var(--font-font-body-md-line-height, 20px);
+          }
+
+          a {
+            color: var(--font-font-body-md-body-md-inverse, #fff);
+            font-family: var(
+              --font-font-body-md-font-family,
+              "Neue Haas Unica Pro"
+            );
+            font-size: var(--font-font-body-md-size, 14px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-font-body-md-line-height, 20px);
+          }
+
+          .flex-itens-f {
+            display: flex;
+            gap: 8px;
+          }
+
+          .flex-imgs {
+            gap: 24px;
+          }
+
+          p {
+            color: var(--font-font-body-md-body-md-inverse, #fff);
+            font-family: var(
+              --font-font-body-md-font-family,
+              "Neue Haas Unica Pro"
+            );
+            font-size: var(--font-font-body-md-size, 14px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: var(--font-font-body-md-line-height, 20px);
+          }
+        }
+      }
+    }
+
+    .line-2 {
+      padding-top: 32px;
+      padding-bottom: 24px;
+
+      p:first-child {
+        color: var(--font-font-body-sm-body-sm, #737373);
+        font-family: var(
+          --font-font-body-sm-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-sm-size, 12px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-font-body-sm-line-height, 16px); /* 133.333% */
+      }
+
+      p:last-child {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin: 0;
+        margin-bottom: 20px;
+
+        color: var(--font-font-body-sm-body-sm, #737373);
+        font-family: var(
+          --font-font-body-sm-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-sm-size, 12px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--font-font-body-sm-line-height, 16px); /* 133.333% */
+      }
+    }
+
+    .prisma {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0px;
+      flex-wrap: wrap;
+      gap: 32px;
+
+      p {
+        color: var(--font-font-body-sm-body-sm, #737373);
+        font-family: var(
+          --font-font-body-sm-font-family,
+          "Neue Haas Unica Pro"
+        );
+        font-size: var(--font-font-body-sm-size, 12px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--font-font-body-sm-line-height, 16px); /* 133.333% */
+      }
+
+      img {
       }
     }
   }
