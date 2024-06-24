@@ -11565,6 +11565,7 @@ body {
 .section-sobre {
   padding: 96px 0px;
   background: var(--default-default-section-bg-primary, #344ff4);
+  overflow: hidden;
 }
 .section-sobre .section-text-img {
   display: flex;
