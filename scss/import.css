@@ -12062,6 +12062,12 @@ body {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 1352px) {
+  .como-funciona .container-sm {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
 .como-funciona .itens-cf {
   display: flex;
   justify-content: space-between;
@@ -12088,6 +12094,8 @@ body {
   .como-funciona .itens-cf .item-1 {
     width: 100%;
     padding-bottom: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .como-funciona .itens-cf .item-1 span {
