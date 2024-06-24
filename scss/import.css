@@ -1273,13 +1273,16 @@ svg {
   bottom: -7px;
 }
 
+#header.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .headerFixoMenu {
-  transition: 0.6s;
+  transition: background 0.3s ease !important;
   width: 100%;
   z-index: 100;
   position: fixed;
-  background: rgb(0, 0, 0);
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0.53) 68%);
+  background: transparent;
 }
 .headerFixoMenu .navbar-after {
   padding-top: 24px;
