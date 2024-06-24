@@ -1223,6 +1223,13 @@
   position: relative;
   z-index: 3;
 
+  @media (max-width: 1352px) {
+    .container-sm {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+
   .itens-cf {
     display: flex;
     justify-content: space-between;
@@ -1247,6 +1254,8 @@
       @media (max-width: 1352px) {
         width: 100%;
         padding-bottom: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
       }
 
       span {
