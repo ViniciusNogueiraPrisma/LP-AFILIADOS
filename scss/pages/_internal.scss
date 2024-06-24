@@ -1251,6 +1251,7 @@
       position: relative;
       z-index: 2;
       background: var(--default-default-section-bg-primary, #344ff4);
+      padding-left: 24px;
 
       @media (max-width: 1239px) {
         width: 100%;
