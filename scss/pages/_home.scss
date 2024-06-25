@@ -1,6 +1,10 @@
 .logo {
   img {
     width: 156px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
   }
 }
 
